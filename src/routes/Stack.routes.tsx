@@ -7,6 +7,7 @@ import {
 import Welcome from '../pages/Welcome';
 import { UserIndentiFication } from '../pages/UserIndentiFication';
 import { Confirmation } from '../pages/Confimation';
+import { PlantSelect } from '../pages/PlantSelect';
 
 import colors from '../styles/colors';
 import react from 'react';
@@ -35,6 +36,11 @@ const AppRoutes: React.FC = () => (
         <StackRoutes.Screen
             name="Confirmation"
             component={Confirmation}
+        />
+
+        <StackRoutes.Screen
+            name="PlantSelect"
+            component={PlantSelect}
         />
 
     </StackRoutes.Navigator>
