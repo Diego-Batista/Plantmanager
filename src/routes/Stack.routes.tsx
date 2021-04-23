@@ -8,11 +8,9 @@ import Welcome from '../pages/Welcome';
 import { UserIndentiFication } from '../pages/UserIndentiFication';
 import { Confirmation } from '../pages/Confimation';
 import { PlantSave } from '../pages/PlantSave';
-import { MyPlants } from '../pages/MyPlants';
 import AuthRoutes from '../routes/tab.routes';
 
 import colors from '../styles/colors';
-import react from 'react';
 
 const StackRoutes = createStackNavigator();
 

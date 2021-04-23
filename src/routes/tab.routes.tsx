@@ -1,9 +1,6 @@
 import React from 'react';
 import {
-    View, 
-    Text, 
-    StyleSheet, 
-    Image
+    Platform
 } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import colors from '../styles/colors';
@@ -21,7 +18,7 @@ const AuthRoutes = () => {
                 inactiveTintColor: colors.heading,
                 labelPosition: 'beside-icon',
                 style: {
-                    paddingVertical: 20,
+                    paddingVertical: Platform.OS === 'ios' ? 20 : 0,
                     height: 88,
                 },
             }}>
